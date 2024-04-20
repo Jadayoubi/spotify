@@ -34,7 +34,7 @@ useEffect(() => {
       try {
         const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
           headers: {
-            Authorization: `Bearer ${access_token}` // Use your access token here
+            Authorization: `Bearer ${access_token}`
           }
         });
 
@@ -54,16 +54,9 @@ fetchArtist();
     fetchAlbums();
   }, [artistId]);
 
-  
-
-  if (loading) {
-    return <p>Loading albums...</p>;
-  }
-
   if (error) {
     return <p>Error: {error}</p>;
   }
-
   return (
     <div>
     <Header/>
@@ -83,7 +76,6 @@ fetchArtist();
                 <p className="card-text">Release Date: {album.release_date}</p>
                 <p className="card-text">Total Tracks: {album.total_tracks}</p>
                 <a href={album.external_urls.spotify} className="btn btn-primary">Preview on Spotify</a>
-                {/* Display additional album information as needed */}
               </div>
             </div>
           </div>

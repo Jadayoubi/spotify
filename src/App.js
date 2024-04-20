@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
-
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom';
-import Header from './components/Header';
 import Home from './components/Home';
-import Login from './components/Login';
 import ArtistSearch from './components/ArtistSearch';
 import ArtistAlbums from './components/ArtistAlbums';
 import NotFound from './components/NotFound';
 import AccessToken from './components/AccessToken';
+
 
 const App = () => {
   return (
@@ -22,6 +20,4 @@ const App = () => {
     </Router>
   );
 };
-
-
 export default App;

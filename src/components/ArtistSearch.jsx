@@ -59,7 +59,7 @@ const ArtistSearch = () => {
 
   const generateStarRating = (popularity) => {
     const maxRating = 5;
-    const rating = Math.ceil((popularity / 100) * maxRating); // Convert popularity to a rating between 1 and 5
+    const rating = Math.ceil((popularity / 100) * maxRating); 
     const stars = [];
     for (let i = 0; i < rating; i++) {
       stars.push(
