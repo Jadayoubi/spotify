@@ -9,8 +9,9 @@ const ArtistAlbums = ({ match }) => {
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-const access_token='BQBUY-OucVDy_yhA_Klft2Qezdpgr5Pi_hhteWRs4LTYsfHGiWSQu6J7xnnM6nL-i2biRIO9NMTpt_kGEagHD0jBN7d4qyjPfvJIDZRZHY6rflNcBoI'
-  useEffect(() => {
+const access_token=
+'BQDIM94dyAB6Ol9Eimox-QcJYzuLsZBH-18YpxFH7Xqc_KKow3NjkVIGuT0eIZbMB90CEs4xP3Qnw380DxDZpAPDPID79Hj5wab3xSJX3uem322J1fg'
+useEffect(() => {
     const fetchArtist = async () => {
       try {
         const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}`, {

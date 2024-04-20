@@ -13,8 +13,8 @@ const ArtistSearch = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const access_token = 'BQBUY-OucVDy_yhA_Klft2Qezdpgr5Pi_hhteWRs4LTYsfHGiWSQu6J7xnnM6nL-i2biRIO9NMTpt_kGEagHD0jBN7d4qyjPfvJIDZRZHY6rflNcBoI'
-
+  const access_token =
+'BQDIM94dyAB6Ol9Eimox-QcJYzuLsZBH-18YpxFH7Xqc_KKow3NjkVIGuT0eIZbMB90CEs4xP3Qnw380DxDZpAPDPID79Hj5wab3xSJX3uem322J1fg'
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const queryParam = params.get("q"); 
