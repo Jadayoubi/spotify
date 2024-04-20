@@ -18,7 +18,7 @@ To replace the access token you should follow these steps:
 2. Press on Generate New Token button
 3. Copy the new token
 4. Go to ArtistSearch.jsx file, change the value of the variable access_token to the new access token
-5. Do the same as step 4 but in the ArtistAlbums.jsx
+5. Go to ArtistAlbums.jsx file and do the same as step 4.
    
 ## Usage
 - Login using your Spotify account
