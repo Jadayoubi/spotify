@@ -1,0 +1,8 @@
+/* styles.css */
+
+@media (min-width: 768px) {
+    .input-group {
+      margin-left: 40%;
+    }
+  }
+  
